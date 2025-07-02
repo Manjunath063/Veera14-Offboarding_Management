@@ -8,7 +8,7 @@ const app = express();
 const port = 3068;
 
 app.use(cors({
-    origin: ['http://13.60.88.243:8122', 'http://13.60.88.243:8123','http://127.0.0.1:5501', 'http://127.0.0.1:5503', 'http://localhost:8122','http://localhost:8123',],
+    origin: ['http://13.60.173.13:8122', 'http://13.60.173.13:8123','http://127.0.0.1:5501', 'http://127.0.0.1:5503', 'http://localhost:8122','http://localhost:8123',],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));
@@ -146,5 +146,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://13.60.88.243:${port}`);
+    console.log(`Server running at http://13.60.173.13:${port}`);
 });
